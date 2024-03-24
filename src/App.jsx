@@ -13,10 +13,6 @@ function App() {
           <Route path='/pokedex' element={<Pokedex />} />
         </Route>
       </Routes>
-      <footer className='pokedex-footer'>
-        <div className='red-section'></div>
-        <div className='black-section'></div>
-      </footer>
     </div>
   );
 }

@@ -3,11 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 80vh;
 }
 
-.container-home img {
-  max-width: 100%;
+.container-img {
+  max-width: 50%;
 }
 
 .container-home form {
@@ -61,6 +61,10 @@
   animation: fadeIn 2s ease-in-out;
 }
 
+.container-parraf {
+  font-size: 1.5rem;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -69,5 +73,23 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .container-home {
+    height: 80vh;
+  }
+  .pokedex-form input {
+    width: 230px;
+  }
+  .welcome-text {
+    font-size: 38px;
+  }
+  .container-parraf {
+    font-size: 17px;
+  }
+  .container-img {
+    max-width: 90%;
   }
 }
