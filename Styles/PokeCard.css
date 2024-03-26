@@ -1,0 +1,34 @@
+.container-poke {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.poke-card {
+  background-color: #908d8d;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.poke-card:hover {
+  transform: translateY(-10px); /* Levanta la tarjeta */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+}
+
+.poke-image {
+  width: 100%;
+  height: auto;
+}
+
+.poke-name {
+  margin-top: 10px;
+  font-size: 26px;
+}

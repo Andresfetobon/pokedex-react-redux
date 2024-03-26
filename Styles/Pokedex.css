@@ -1,6 +1,6 @@
 .header-container {
   position: relative;
-  height: 100px; 
+  height: 100px;
 }
 
 .red-section-header {
@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%; 
+  height: 70%;
 }
 
 .gray-section-header {
@@ -28,7 +28,7 @@
   top: 50%; /* Desplaza la sección gris hacia abajo para superponerla a la sección roja */
 }
 
-.container-image-header{
+.container-image-header {
   max-width: 7%;
   position: absolute;
   top: 1.3rem;
@@ -37,3 +37,10 @@
   animation-delay: 2s;
 }
 
+.container-form-search {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 12rem;
+  height: 15vh;
+}

@@ -5,6 +5,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background: radial-gradient(
+    circle,
+    rgb(255, 254, 254) 0%,
+    rgb(225, 222, 222) 100%
+  );
+}
+
 .pokedex-footer {
   position: fixed;
   bottom: 0;
@@ -41,9 +49,13 @@
   transform: translateX(-50%); /* Centrar horizontalmente */
 }
 
-span {
+.welcome-user span {
   font-weight: bold;
   color: #f00;
+}
+
+li {
+  list-style: none;
 }
 
 @keyframes jump {
@@ -57,7 +69,6 @@ span {
     transform: translateY(0); /* Vuelve a la posición inicial */
   }
 }
-
 
 .image-container img {
   max-width: 17%;
