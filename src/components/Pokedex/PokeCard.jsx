@@ -18,16 +18,17 @@ const PokeCard = ({ url }) => {
     navigate(`/pokedex/${pokemon.name}`);
   };
 
+  console.log(pokemon);
 
   return (
-    <div className='container-poke' onClick={handleGo}>
+    <div className={`container-poke ${pokemon?.types[0].type.name}`} onClick={handleGo}>
       <div className='poke-card'>
         <img
           className='poke-image'
           src={pokemon?.sprites.other['official-artwork'].front_default}
           alt='imagen-pokemon'
         />
-        <section>
+        <section className='section-card'>
           <h3 className='poke-name'>{pokemon?.name}</h3>
           <ul>
             {pokemon?.types.map(typeInfo => (
@@ -35,7 +36,7 @@ const PokeCard = ({ url }) => {
             ))}
           </ul>
         </section>
-        <footer>
+        <footer className='footer-card'>
           <ul>
             {pokemon?.stats.map(statInfo => (
               <li key={statInfo.url}>

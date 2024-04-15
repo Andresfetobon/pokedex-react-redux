@@ -7,8 +7,8 @@
 }
 
 .poke-card {
-  background-color: #908d8d;
-  border: 1px solid #ddd;
+  background-color: currentColor;
+  border: 1px solid currentColor;
   border-radius: 8px;
   padding: 20px;
   width: 300px;
@@ -32,3 +32,26 @@
   margin-top: 10px;
   font-size: 26px;
 }
+.section-card {
+  background-color: rgb(255, 255, 255);
+}
+.footer-card {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.fire{
+  color: rgb(223, 82, 57)
+}
+.water{
+  color: rgb(35, 35, 202);
+}
+.bug{
+  color: rgb(55, 123, 82);
+}
+.grass{
+  color: rgb(23, 108, 23);
+}
+ .normal {
+  color:  #c06227;
+ }
