@@ -39,19 +39,157 @@
   background-color: rgb(255, 255, 255);
 }
 
-
-.fire{
-  color: rgb(223, 82, 57)
+.fire {
+  color: rgb(223, 82, 57);
 }
-.water{
+.water {
   color: rgb(35, 35, 202);
 }
-.bug{
-  color: rgb(55, 123, 82);
+.bug {
+  color: rgb(5, 63, 44);
 }
-.grass{
+.grass {
   color: rgb(23, 108, 23);
 }
- .normal {
-  color:  #c06227;
- }
+.normal {
+  color: rgb(133, 56, 8);
+}
+
+.fighting {
+  color: rgb(224, 187, 139);
+}
+
+.ground {
+  color: rgb(103, 35, 132);
+}
+.poison {
+  color: rgb(66, 58, 222);
+}
+
+.rock {
+  color: rgb(139, 137, 137);
+}
+.electric {
+  color: rgb(212, 212, 1);
+}
+.psychic {
+  color: rgb(212, 166, 1);
+}
+.ice {
+  color: rgb(19, 128, 134);
+}
+.dragon {
+  color: rgb(255, 19, 19);
+}
+.dark {
+  color: rgb(69, 30, 30);
+}
+.fairy {
+  color: rgb(69, 30, 30);
+}
+
+.bg-fairy {
+  background-image: linear-gradient(
+    0deg,
+    rgb(209, 129, 129) 0%,
+    rgb(69, 30, 30) 100%
+  );
+}
+.bg-dark {
+  background-image: linear-gradient(
+    0deg,
+    rgb(209, 129, 129) 0%,
+    rgb(69, 30, 30) 100%
+  );
+}
+.bg-dragon {
+  background-image: linear-gradient(
+    0deg,
+    rgb(255, 19, 53) 0%,
+    rgb(255, 200, 0) 100%
+  );
+}
+.bg-ice {
+  background-image: linear-gradient(
+    0deg,
+    rgb(1, 201, 212) 0%,
+    rgb(188, 19, 255) 100%
+  );
+}
+.bg-psychic {
+  background-image: linear-gradient(
+    0deg,
+    rgb(212, 166, 1) 0%,
+    rgb(174, 143, 34) 100%
+  );
+}
+.bg-electric {
+  background-image: linear-gradient(
+    0deg,
+    rgb(105, 105, 1) 0%,
+    rgb(212, 212, 1) 100%
+  );
+}
+.bg-fire {
+  background-image: linear-gradient(
+    0deg,
+    rgb(219, 101, 80) 0%,
+    rgb(214, 39, 7) 100%
+  );
+}
+.bg-water {
+  background-image: linear-gradient(
+    0deg,
+    rgb(35, 35, 202) 0%,
+    rgb(15, 15, 66) 100%
+  );
+}
+.bg-grass {
+  background-image: linear-gradient(
+    0deg,
+    rgb(13, 55, 13) 0%,
+    rgb(23, 156, 23) 100%
+  );
+}
+.bg-bug {
+  background-image: linear-gradient(
+    0deg,
+    rgb(8, 86, 60) 0%,
+    rgb(15, 161, 112) 100%
+  );
+}
+.bg-fighting {
+  background-image: linear-gradient(
+    0deg,
+    rgb(221, 142, 38) 0%,
+    rgb(224, 187, 139) 100%
+  );
+}
+.bg-normal {
+  background-image: linear-gradient(
+    0deg,
+    rgb(133, 56, 8) 0%,
+    rgb(197, 95, 32) 100%
+  );
+}
+.bg-ground {
+  background-image: linear-gradient(
+    0deg,
+    rgb(85, 24, 111) 0%,
+    rgb(173, 58, 222) 100%
+  );
+}
+.bg-poison {
+  background-image: linear-gradient(
+    0deg,
+    rgb(8, 8, 8) 0%,
+    rgb(66, 58, 222) 100%
+  );
+}
+.bg-rock {
+  background-image: linear-gradient(
+    0deg,
+    rgb(139, 137, 137) 0%,
+    rgb(30, 28, 28) 100%
+  );
+}

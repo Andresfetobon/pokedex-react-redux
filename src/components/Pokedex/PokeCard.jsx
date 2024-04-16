@@ -22,7 +22,7 @@ const PokeCard = ({ url }) => {
 
   return (
     <div className={`container-poke ${pokemon?.types[0].type.name}`} onClick={handleGo}>
-      <div className='poke-card'>
+      <div className={`poke-card bg-${pokemon?.types[0].type.name}`}>
         <img
           className='poke-image'
           src={pokemon?.sprites.other['official-artwork'].front_default}
