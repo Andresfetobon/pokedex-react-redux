@@ -35,9 +35,8 @@ const PokeCard = ({ url }) => {
               <li key={typeInfo.url}>{typeInfo.type.name}</li>
             ))}
           </ul>
-        </section>
         <footer className='footer-card'>
-          <ul>
+          <ul className='conteiner-map'>
             {pokemon?.stats.map(statInfo => (
               <li key={statInfo.url}>
                 <span>{statInfo.stat.name}</span>
@@ -46,6 +45,7 @@ const PokeCard = ({ url }) => {
             ))}
           </ul>
         </footer>
+      </section>
       </div>
     </div>
   );
