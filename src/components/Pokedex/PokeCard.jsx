@@ -18,36 +18,45 @@ const PokeCard = ({ url }) => {
     navigate(`/pokedex/${pokemon.name}`);
   };
 
-  console.log(pokemon);
-
   return (
-    <div className={`container-poke ${pokemon?.types[0].type.name}`} onClick={handleGo}>
-      <div className={`poke-card bg-${pokemon?.types[0].type.name}`}>
+
+    <article
+      className={`pokecard ${pokemon?.types[0].type.name}`}
+      onClick={handleGo}
+    >
+      <header className={`pokecard-header bg-${pokemon?.types[0].type.name}`}>
         <img
-          className='poke-image'
+          className='pokecard-image'
           src={pokemon?.sprites.other['official-artwork'].front_default}
           alt='imagen-pokemon'
         />
-        <section className='section-card'>
-          <h3 className='poke-name'>{pokemon?.name}</h3>
-          <ul>
-            {pokemon?.types.map(typeInfo => (
-              <li key={typeInfo.url}>{typeInfo.type.name}</li>
-            ))}
-          </ul>
-        <footer className='footer-card'>
-          <ul className='conteiner-map'>
-            {pokemon?.stats.map(statInfo => (
-              <li key={statInfo.url}>
-                <span>{statInfo.stat.name}</span>
-                <span>{statInfo.base_stat}</span>
-              </li>
-            ))}
-          </ul>
-        </footer>
+      </header>
+
+      <section className='pokecard-body'>
+        <h3 className='poke-name'>{pokemon?.name}</h3>
+        <ul className='pokecard-types'>
+          {pokemon?.types.map(typeInfo => (
+            <li 
+            className='pokecard_types-item'
+            key={typeInfo.url}
+            >{typeInfo.type.name}
+            </li>
+          ))}
+        </ul>
       </section>
-      </div>
-    </div>
+
+      <footer className='footer-card'>
+        <ul className='pokecard-stats'>
+          {pokemon?.stats.map(statInfo => (
+            <li className='pokecard__stats-item' key={statInfo.url}>
+              <span className='pokecard__stats-label' >{statInfo.stat.name}</span>
+              <span className='pokecard__stats-value' >{statInfo.base_stat}</span>
+            </li>
+          ))}
+        </ul>
+      </footer>
+
+    </article>
   );
 };
 

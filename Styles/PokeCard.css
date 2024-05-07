@@ -1,3 +1,82 @@
+.pokecard {
+  width: 400px;
+  height: 450px;
+  font-size: 1rem;
+  border-radius: 0.8em;
+  border: 0.5em solid currentColor;
+  margin: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.pokecard-header {
+  aspect-ratio: 2;
+  position: relative;
+  background-color: currentColor;
+}
+
+.pokecard-image {
+  position: absolute;
+  width: 70%;
+  bottom: -3em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pokecard-body{
+  padding-top: 3em;
+}
+
+.poke-name {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.pokecard-types{
+  display: flex;
+  justify-content: center;
+  gap: 2em
+}
+
+.pokecard_types-item {
+  text-transform: capitalize;
+  position: relative;
+}
+
+.pokecard_types-item::before{
+  content: '/';
+  position: absolute;
+  left: -1em;
+}
+.pokecard_types-item:first-child::before{
+  content: '';
+}
+
+.pokecard-stats {
+  padding: 0.5em 0.5em 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1em 0.2em;
+}
+
+.pokecard__stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.pokecard__stats-label {
+  opacity: 0.4;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.pokecard__stats-value{
+  font-size: 1.1rem;
+}
+
 .container-poke {
   display: flex;
   flex-wrap: wrap;
@@ -6,36 +85,21 @@
   text-align: center;
 }
 
-.poke-card {
-  background-color: currentColor;
-  border: 1px solid currentColor;
-  border-radius: 8px;
-  padding: 20px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.poke-card:hover {
+
+.pokecard:hover {
   transform: translateY(-10px); /* Levanta la tarjeta */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra */
 }
 
-.poke-image {
-  width: 100%;
-  height: auto;
-}
 
 .poke-name {
   margin-top: 10px;
   font-size: 26px;
 }
-.section-card {
-  background-color: rgb(255, 255, 255);
-}
 
+
+/* section colors card  */
 
 .fire {
   color: rgb(223, 82, 57);
